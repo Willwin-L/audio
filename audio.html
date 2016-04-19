@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>audio2</title>
+</head>
+<body>
+	<button id="ctlbtn1">1</button>
+	<button id="ctlbtn2">2</button>
+    <button id="ctlbtn3">3</button>
+	<button id="ctlbtn4">4</button>
+	<button id="ctlbtn5">5</button>
+    <button id="ctlbtn6">6</button>
+    <button id="ctlbtn7">7</button>
+    <button id="sheng">升</button>
+    <button id="jiang">降</button>
+    
+
+    <script type="text/javascript">
+        var audio;
+        var yinjie=3;
+    
+    document.getElementById('ctlbtn1').onclick=function(){
+    	audio = new Audio('./raw/c'+yinjie+'.ogg')
+    	audio.play();
+    }
+    document.getElementById('ctlbtn2').onclick=function(){
+    	audio = new Audio('./raw/d'+yinjie+'.ogg');
+        audio.play();
+    }
+    document.getElementById('ctlbtn3').onclick=function(){
+    	audio = new Audio('./raw/e'+yinjie+'.ogg');
+    	audio.play();
+    }
+    document.getElementById('ctlbtn4').onclick=function(){
+    	audio = new Audio('./raw/f'+yinjie+'.ogg');
+    	audio.play()
+    }
+    document.getElementById('ctlbtn5').onclick=function(){
+    	audio = new Audio('./raw/g'+yinjie+'.ogg');
+    	audio.play();
+    }
+    document.getElementById('ctlbtn6').onclick=function(){
+    	audio = new Audio('./raw/a'+yinjie+'.ogg');
+    	audio.play();
+    }
+    document.getElementById('ctlbtn7').onclick=function(){
+    	audio = new Audio('./raw/b'+yinjie+'.ogg');
+    	audio.play();
+    }
+   
+
+    document.getElementById('sheng').onclick = function(){
+    	yinjie++;
+    }
+    document.getElementById('jiang').onclick = function(){
+    	yinjie--;
+    }
+    </script>
+</body>
+</html>
